@@ -17,7 +17,7 @@ rebuild:
 	@docker-compose up -d --build --remove-orphans
 	@docker-compose ps -a
 
-logs:
+log:
 	@docker-compose logs
 
 # Optimize with variables
