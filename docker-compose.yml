@@ -44,7 +44,11 @@ services:
     environment:
       NGINX_DOCKER_GEN_CONTAINER: "nginx-gen"
       NGINX_PROXY_CONTAINER: "nginx"
+# networks:
+#  default:
+#    external:
+#      name: nginx-proxy
 networks:
   default:
-    external:
-      name: nginx-proxy
+    name: nginx-proxy
+    external: true
