@@ -20,7 +20,7 @@ services:
     image: jwilder/docker-gen
     command: -notify-sighup nginx -watch -wait 5s:30s /etc/docker-gen/templates/nginx.tmpl /etc/nginx/conf.d/default.conf
     container_name: nginx-gen
-    restart: unless-stopped
+    restart: always
 #    restart: on-failure
     volumes:
       - ./conf.d:/etc/nginx/conf.d
@@ -34,7 +34,7 @@ services:
     image: jrcs/letsencrypt-nginx-proxy-companion
     container_name: nginx-letsencrypt
 #    restart: unless-stopped
-    restart: on-failure
+    restart: always
     volumes:
       - ./conf.d:/etc/nginx/conf.d
       - ./vhost.d:/etc/nginx/vhost.d
