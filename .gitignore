@@ -10,3 +10,4 @@ html/*
 vhost.d/*
 !vhost.d/.gitkeep
 
+.env
