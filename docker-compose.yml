@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   nginx:
-    image: nginx:1.25.2-alpine
+    image: nginx:${NGINX_VER:-1.25.4}-alpine
     labels:
       com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy: "true"
     container_name: nginx
