@@ -6,3 +6,8 @@ conf.d/*
 !conf.d/client_max_body_size.conf
 
 html/*
+
+vhost.d/*
+!vhost.d/.gitkeep
+
+.env

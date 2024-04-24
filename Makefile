@@ -14,6 +14,7 @@ status:
 	@docker-compose ps -a
 
 rebuild:
+	@docker-compose down
 	@docker-compose up -d --build --remove-orphans
 	@docker-compose ps -a
 
