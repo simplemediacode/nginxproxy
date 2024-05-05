@@ -2,7 +2,7 @@
 
 Most of "Docker proxy"code is from from Jason Wilder, with some spice from me.
 
-This is not ideal setup, but for [MediaBox.lv][mediaboxlv] / [SimpleMediaCode][smccom]  development and some small production *good enough*.
+This is not ideal setup, but for [MediaBox.lv][mediaboxlv] / [SimpleMediaCode][smccom] development and some small production *good enough*.
 
 ## Usage
 
